@@ -17,7 +17,7 @@ const Netflix = () =>{
                 <div className="contains">
                     <img src={logo1} alt="hi" className="imager1"></img> 
                     
-                    <button className="btn1">Sign In</button>
+                   
                 </div>
 
                 <div className="center">
