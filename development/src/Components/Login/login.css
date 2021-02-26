@@ -1,0 +1,64 @@
+.container2{
+    background-color: #ddd;
+    width: 400px;
+    height: 600px;
+    padding: 8px 8px;
+    position: absolute;
+    top:5px;
+    left:20%;
+}
+
+.icons{
+    padding: 16px 20px;
+    margin-left: 20px;
+    margin-top: 5%;
+    font-size: 30px;
+    color: grey;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+.modal{ 
+    position: relative;
+
+}
+
+.alert1{
+
+    display: none;
+    color: red;
+}
+.alert2{
+
+    display: none;
+    color: red;
+}
+.alert3{
+
+    display: none;
+    color: red;
+}
+
+
+.btn{
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.btn:hover{
+    background-color: brown;
+    color: white;
+}
+
+.body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+    'Helvetica Neue', sans-serif;
+}
+
+.inpt5{
+        margin-left: 2%;
+        margin-top: -2%;       
+        width: 90%;
+        padding: 16px 10px;
+}
