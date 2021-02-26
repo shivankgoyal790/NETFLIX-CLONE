@@ -1,11 +1,13 @@
 import React from 'react'
 import "./login.css"
-import logo from 'G:/react_practice/development/src/Components/images/t1.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo from 'G:/react_practice/development/src/Components/images/netflix1.jpg'
+import logo1 from 'G:/react_practice/development/src/Components/images/netflix2.png'
+/*import logo from 'G:/react_practice/development/src/Components/images/t1.jpg'*/
+/*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF} from '@fortawesome/free-brands-svg-icons'
 import { faGoogle} from '@fortawesome/free-brands-svg-icons'
 import { faGithub} from '@fortawesome/free-brands-svg-icons'
-import { faTelegram} from '@fortawesome/free-brands-svg-icons'
+import { faTelegram} from '@fortawesome/free-brands-svg-icons'*/
 
 const myfunction= ()=>
 {
@@ -43,10 +45,14 @@ const Login = () => {
 return(
     <div>
         <div className="modal">
-            <img src={logo} alt="hi" />
-            
-        <div className="container2"> 
-            <h2>LOGIN FORM</h2>
+            <img src={logo} alt="hi" className="imager" />
+             <div className="container3"> 
+                <img src={logo1} alt="hi" className="imager3"></img> 
+            </div>
+            <div className="container2"> 
+        
+            <div className="inside">
+            <h2 className="line4">Sign In</h2>
             <p>Enter Name
             </p>
             <input type="text" placeholder="Enter your name" className="inpt5" />
@@ -61,12 +67,8 @@ return(
             <button className="btn" onClick={myfunction}>SUBMIT</button>&emsp;
             <button className="btn" onClick={myfunction2}>RESET</button>
             <br /><br />
-            <div>
-                <span className="icons"><FontAwesomeIcon icon={faFacebookF}/></span>
-                <span className="icons"><FontAwesomeIcon icon={faGoogle}/> </span>
-                <span className="icons"><FontAwesomeIcon icon={faTelegram}/></span>
-                <span className="icons"><FontAwesomeIcon icon={faGithub}/></span>
             </div>
+           
            
         </div>
         </div>

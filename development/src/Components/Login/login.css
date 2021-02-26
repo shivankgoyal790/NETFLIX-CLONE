@@ -1,11 +1,30 @@
 .container2{
-    background-color: #ddd;
-    width: 400px;
+    background-color: rgba(0,0,0,0.7);
+    width: 430px;
     height: 600px;
-    padding: 8px 8px;
+    padding: 10px 10px;
     position: absolute;
-    top:5px;
-    left:20%;
+    top:12%;
+    left:33.5%;
+}
+
+.line4{
+    color: white;
+}
+
+.inside{
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 14%;
+    text-align: left;
+    
+}
+.container3{
+
+    float: left;
+    width: 100%;
+    position:absolute;
+    top:0;
 }
 
 .icons{
@@ -21,6 +40,12 @@
 
 }
 
+.imager3{
+    width: 175px;
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
 .alert1{
 
     display: none;
@@ -59,6 +84,6 @@
 .inpt5{
         margin-left: 2%;
         margin-top: -2%;       
-        width: 90%;
+        width: 60%;
         padding: 16px 10px;
 }
