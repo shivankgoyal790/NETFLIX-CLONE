@@ -1,12 +1,15 @@
 .divstyle{
     background-color: #303030;
-    width: 60%;
+    width: 56%;
     color: white;
     border: 1px solid black;
-    padding: 18px 14px;
+    padding: 20px 30px;
     cursor: pointer;
-    margin-left: 20%;
+    margin-left: 19.5%;
+    font-size: 26px;
+    margin-top: 0.6%;
 }
+
 
 
 
