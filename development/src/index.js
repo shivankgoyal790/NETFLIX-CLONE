@@ -1,6 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Netflix from './Apps/netflix'
+import Netflixrouter from "G:/react_practice/development/src/Netflixrouter.js"
+import {BrowserRouter} from "react-router-dom"
 
 const Reactroot = document.getElementById("root")
-ReactDOM.render(<Netflix />,Reactroot)     
+ReactDOM.render(
+<BrowserRouter>
+<Netflixrouter />
+</BrowserRouter>,Reactroot)     
