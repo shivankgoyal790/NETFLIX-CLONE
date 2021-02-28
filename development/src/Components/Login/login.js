@@ -62,10 +62,15 @@ return(
             <br/><br/>
             <button className="facebookbtn"><FontAwesomeIcon icon={faFacebookF} className="icon"/> Login with facebook</button>
             <br /><br/>
+            <div className="margin">
             <span className="new">
-                New to netflix
+                New to netflix?
             </span>
             <span className="sign">Sign up now</span> 
+            </div>
+            <div className="new2">
+                <span >This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="123">Learn more.</a></span>
+            </div>
             </div>
            
            

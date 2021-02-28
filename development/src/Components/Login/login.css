@@ -32,6 +32,21 @@
     font-size: 16px;
     color: #808080;
 }
+a{
+    text-decoration: none;
+    color: #0071eb;
+}
+.new2{
+    font-size: 14px;
+    color: #808080;
+    margin-top: 4%;
+    margin-left: 1.5%;
+}
+
+.margin{
+    margin-top: -4%;
+    margin-left: 1.5%;
+}
 
 .sign{
 
