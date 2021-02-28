@@ -8,6 +8,7 @@ import logo4 from 'G:/react_practice/development/src/Components/images/netflix5.
 import Accord from 'G:/react_practice/development/src/Components/Accordian/Accordian'
 
 
+
 const Netflix = () =>{
     return(
         <div>
@@ -16,7 +17,9 @@ const Netflix = () =>{
             <div className="container-content">
                 <div className="contains">
                     <img src={logo1} alt="hi" className="imager1"></img> 
-                    
+                    <div className="btn1">
+                        <a className="anchor" href={"Login"}>Sign In</a>
+                    </div>
                    
                 </div>
 
@@ -25,8 +28,10 @@ const Netflix = () =>{
                     <h1>shows and more.</h1>
                     <h2>Watch anywhere. Cancel anytime.</h2>
                     <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
-                        <div className="input-container"><input className="inpt" placeholder="Email address"></input>
-                        <button className="btn2">Get Started </button></div>
+                    <div className="input-container">
+                        <input className="inpt" placeholder="Email address"></input>
+                        <button className="btn2">Get Started </button>
+                    </div>
                 </div>
             </div>
         </div>
