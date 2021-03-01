@@ -11,20 +11,20 @@ import { faTelegram} from '@fortawesome/free-brands-svg-icons'*/
 
 const myfunction= ()=>
 {
- var x= document.getElementsByClassName("inpt");
+ var x= document.getElementsByClassName("inpt5");
  var y= document.getElementsByClassName("alert1");
-  for(var i=0;i<3;i++)
-  {
-      y[i].style.display = "none";
-  }
-  if(x[0].value === "")
+ var z= document.getElementsByClassName("alert2");
+  y[0].style.display = "none";
+  z[0].style.display ="none"
+
+
+  if(x[0].value === ""){
     y[0].style.display = "block";
-  if(x[1].value.length === 0)
-  y[1].style.display = "block";
-  if(x[1].value.length < 8 && x[1].value.length > 0)
+
+  }
+  if(x[1].value.length < 8)
   {
-      y[2].style.display ="block";  
-        y[1].style.display ="none"
+      z[0].style.display ="block";  
  }
 }
 
@@ -45,15 +45,15 @@ return(
         
             <div className="inside">
             <h2 className="line4">Sign In</h2>
-            <input type="text" placeholder="Email or phone number " className="inpt5" /><br/><br/>
+            <input type="text" placeholder="Email or phone number " className="inpt5" onKeyPress={myfunction}/><br/><br/>
             <p className="alert1">Please enter a valid email or phone number</p>
-            <input type="password" placeholder="Password" className="inpt5" />
-            <p className="alert1">*Field empty</p>
-            <p className="alert1">*Minimum 8 characters</p>
+            <input type="password" placeholder="Password" className="inpt5" onKeyPress={myfunction} />
+        
+            <p className="alert2">Your password must contain between 4 and 60 characters.</p>
             <br />
             <br />
             <br/>
-            <button className="btn6" onClick={myfunction}>Sign In</button>&emsp;
+            <button className="btn6">Sign In</button>&emsp;
             <br /><br/>
             <div className="line6">
             <input type="checkbox"  /><span className="remember">Remember Me</span>
