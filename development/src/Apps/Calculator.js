@@ -7,9 +7,9 @@ const Calculator = () =>{
         <div>
                 <div className="container">
                     <input type="text" value="0" className="inpt"></input>
-                    <br/>
+                    <br/><br/>
                     <div>
-                        <button className="btn">M</button>
+                        <button className="btn">M</button>&emsp;
                         <button className="btn">M</button>
                         <button className="btn">M</button>
                         <button className="btn">M</button>
