@@ -5,28 +5,88 @@ body{
 
 .container{
    width: 58%;
-   margin-top: 5%;
-   margin-left: 20%;        
+   margin-top: 3%;
+   margin-left: 19.5%;        
 }
-.inpt{
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    
+    margin-top: 0.5%;
+    margin-left: 0.8%;
+    width: 100%;
+
+}
+
+#inpt{
 
     padding: 20px 16px;
     border-top:2px solid rgb(1, 153, 1);
-    background-color: rgb(82, 80, 80);
+    background-color: rgb(59, 58, 58);
     color: white;
     width: 100%;
     height:150px;
     font-size: 40px;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.images{
+
+    display: none;
+    width: 100%;
+}
+
+.width{
+    width: 100%;
+}
+
+.active{
+    background-color:rgb(1, 153, 1) ;
 }
 
 .btn{
-    background-color: rgb(117, 116, 116);
-    padding: 32px 70px;
-    margin:1px 1px 1px 1px;
-
+    
+    flex:25%;
+    background-color: rgb(73, 72, 72);
+    text-align: center;
+    border:none;
     color: white;
+    padding-top:23px;
+    padding-bottom:23px ;
+    font-size: 32px;
+    margin-left: 1%;
+}
+
+.btn1{
+    
+    flex:25%;
+    background-color: #14a01b;
+    text-align: center;
+    border:none;
+    color: white;
+    padding-top:30px;
+    padding-bottom:30px ;
+    font-size: 20px;
+    margin-left: 1%;
 }
 
 .btn:hover{
     background-color: grey;
+}
+
+
+@media screen and (max-width:600px){
+
+    .container{
+        width: 95%;
+        margin-left: 1%;
+        margin-top: 25%;
+    }   
+
+    .images{
+        display: block;
+    }
 }
