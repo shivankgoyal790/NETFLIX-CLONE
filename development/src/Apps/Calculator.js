@@ -1,27 +1,61 @@
 import React from 'react'
 import "./calculator.css"
 import logo from "G:/react_practice/development/src/Components/images/images.png"
-const myfunction5 = () =>{
+var y;
+var z;
+var x;
 
-    var x=document.getElementById("inpt");
-    if(x[0].Value === "")
-        x[0].Value += 7;
+class Calculator extends React.Component {
+    
+    shoot = (a) => {
 
-}
+        if(a==="C" || a==="CE")
+        {
+            document.getElementById("inpt").value = "";
+            document.getElementById("inpt").placeholder = 0;
+        }
+        else if(a !== "+" && a !== "=" && a !== "-"){
+        document.getElementById("inpt").value += a;
+        y =  document.getElementById("inpt").value;
+        }
+        else if(a === "+" || a === "-")
+        {
+            x = a;
+            document.getElementById("inpt").value = "";
+            document.getElementById("inpt").placeholder = y;
+            z = y;
+            y= "";
+            
+        }
 
-const Calculator = () =>{
+
+        else if(a === "="){
+            if(x === "+")
+            document.getElementById("inpt").value = Number(y)+ Number(z);
+            if(x === "-")
+            document.getElementById("inpt").value = Number(z)- Number(y);
+            y="";
+            z="";
+
+        }
+
+      
+
+    }
+   render(){
+
     return(
 
         <div>
                 <div className="container">
                     
                     <img src={logo} alt="hi" className="images"></img>
-                    <input type="text" placeholder="0"  id="inpt"></input>
+                    <input type="text" id="inpt" value="&#x00A;" placeholder="0"></input>
                     <br/><br/>
                     <div className="flex-container">
                         <div className="btn">M</div>&emsp;
-                        <div className="btn">CE</div>
-                        <div className="btn">C</div>
+                        <div className="btn" onClick = {() => this.shoot("CE")}>CE</div>
+                        <div className="btn" onClick = {() => this.shoot("C")}>C</div>
                         <div className="btn">X</div>
                         <div className="btn"> &#xf7;</div>
                         
@@ -31,9 +65,9 @@ const Calculator = () =>{
                     
                     <div className="flex-container">
                         <div className="btn">M</div>&emsp;
-                        <div className="btn" onclick={myfunction5}>7</div>
-                        <div className="btn">8</div>
-                        <div className="btn">9</div>
+                        <div className="btn" onClick = {() => this.shoot("7")} >7 </div>
+                        <div className="btn" onClick = {() => this.shoot("8")}>8</div>
+                        <div className="btn" onClick = {() => this.shoot("9")}>9</div>
                         <div className="btn">x</div>
                         <br/>
                         
@@ -43,10 +77,10 @@ const Calculator = () =>{
                          
                     <div className="flex-container">
                         <div className="btn">&radic;</div>&emsp;
-                        <div className="btn">4</div>
-                        <div className="btn">5</div>
-                        <div className="btn">6</div>
-                        <div className="btn">-</div>
+                        <div className="btn" onClick = {() => this.shoot("4")}>4</div>
+                        <div className="btn" onClick = {() => this.shoot("5")}>5</div>
+                        <div className="btn" onClick = {() => this.shoot("6")}>6</div>
+                        <div className="btn" onClick = {() => this.shoot("-")}>-</div>
                         <br/>
                         
                         
@@ -55,10 +89,10 @@ const Calculator = () =>{
                          
                     <div className="flex-container">
                         <div className="btn">%</div>&emsp;
-                        <div className="btn">1</div>
-                        <div className="btn">2</div>
-                        <div className="btn">3</div>
-                        <div className="btn">+</div>
+                        <div className="btn" onClick = {() => this.shoot("1")}>1</div>
+                        <div className="btn" onClick = {() => this.shoot("2")}>2</div>
+                        <div className="btn" onClick = {() => this.shoot("3")}>3</div>
+                        <div className="btn" onClick = {() => this.shoot("+")}>+</div>
                         <br/>
                         
                         
@@ -66,10 +100,10 @@ const Calculator = () =>{
 
                     <div className="flex-container">
                         <div className="btn">1/x</div>&emsp;
-                        <div className="btn">0</div>
-                        <div className="btn">0</div>
-                        <div className="btn">.</div>
-                        <div className="btn1">=</div>
+                        <div className="btn" onClick = {() => this.shoot("0")}>0</div>
+                        <div className="btn" onClick = {() => this.shoot("00")}>00</div>
+                        <div className="btn" onClick = {() => this.shoot(".")}>.</div>
+                        <div className="btn1"  onClick = {() => this.shoot("=")}>=</div>
                         <br/>
                         
                         
@@ -78,7 +112,13 @@ const Calculator = () =>{
                     
                 </div>
         </div>
-    )
+
+    
+    );
+
+    
+    }
+
 }   
 
 
