@@ -89,7 +89,7 @@ const Netflix = () =>{
                     <div className="myborder2" />
 
                     <div >
-                        <h1 className="div3">Frequently Asked Questions</h1>
+                        <h1 className="div3"><br/><br/>Frequently Asked Questions</h1><br/>
                         {<Accord />}
                     </div>
 
