@@ -1,7 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Calculator from "G:/react_practice/development/src/Apps/Calculator.js"
-
+import { BrowserRouter } from "react-router-dom"
+/*import Calculator from "G:/react_practice/development/src/Apps/Calculator.js"*/
+import Netflixrouter from "G:/react_practice/development/src/Netflixrouter.js"
 const Reactroot = document.getElementById("root")
 ReactDOM.render(
-<Calculator />,Reactroot)     
+<BrowserRouter> <Netflixrouter></Netflixrouter></BrowserRouter>
+,Reactroot)  
